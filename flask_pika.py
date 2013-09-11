@@ -39,7 +39,6 @@ class Pika(object):
         warnings.warn("Creating AMQP Channel")
         return pika_connection.channel()
 
-    @property
     def channel(self):
         if self._threadLocal is not None:
             ch = getattr(self._threadLocal, 'pika_channel', None)
