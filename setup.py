@@ -21,7 +21,7 @@ setup(
     platforms='any',
     install_requires=[
         'Flask',
-        'pika==0.9.13'
+        'pika>=0.9.13'
     ],
     classifiers=[
         'Environment :: Web Environment',
